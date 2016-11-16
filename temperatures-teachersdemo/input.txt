@@ -1,0 +1,6 @@
+San Francisco	22
+Edinburgh	14
+Los Angeles	23
+Edinburgh	12
+Edinburgh	9
+Los Angeles	21
