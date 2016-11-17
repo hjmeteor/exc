@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 from bitarray import bitarray
 import mmh3
 import sys
@@ -34,12 +33,12 @@ def get_num(false_positive_probility, entries):
     return (int(bitarray_num), int(hash_num))
 
 
-false_positive_probility = 0.01
-num = get_num(false_positive_probility, sys.argv[1])
-print(num)
-bf = BloomFilter(num[0], num[1])
-for line in sys.stdin:
-    line = line.strip()
-    if bf.query(line) == False:
-        bf.add(line)
-        print("{0}".format(line))
+if __name__ == '__main__':
+    false_positive_probility = 0.01
+    num = get_num(false_positive_probility, sys.argv[1])
+    bf = BloomFilter(num[0], num[1])
+    for line in sys.stdin:
+        line = line.strip()
+        if bf.query(line) is False:
+            bf.add(line)
+            print("{0}".format(line))
