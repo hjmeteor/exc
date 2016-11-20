@@ -1,1 +1,1 @@
-cat /Users/Meteor/OneDrive\ -\ University\ of\ Edinburgh/EXC/Assignment/cw2/data/par3/webSmall.txt | ./bloom_filter.py 95350 > output.out
+cat /Users/Meteor/Downloads/data/part3/webLarge.txt | ./bloom_filter.py 1897987 > output.out

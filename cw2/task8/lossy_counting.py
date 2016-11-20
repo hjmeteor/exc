@@ -54,5 +54,5 @@ if __name__ == '__main__':
         counter.addCount(line)
 
     for item, count in sorted(
-            counter.iterateOverThresholdCount(100), key=lambda x: x[1]):
+            counter.iterateOverThresholdCount(10000), key=lambda x: x[1]):
         print(item, count, counter.getBucketID(item))

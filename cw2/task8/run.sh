@@ -1,1 +1,1 @@
-cat /Users/Meteor/OneDrive\ -\ University\ of\ Edinburgh/EXC/Assignment/cw2/data/par4/queriesSmall.txt | ./lossy_counting.py 
+cat /Users/Meteor/Downloads/data/part4/queriesLarge.txt | ./lossy_counting.py > output.out
